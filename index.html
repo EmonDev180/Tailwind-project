@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <title>Document</title>
+</head>
+
+
+<body>
+
+    <div class="navbar bg-gray-100 py-4 shadow-xl">
+        <div class="navbar-start">
+            <div class="dropdown flex items-center space-x-96">
+                <div role="button" id="dropdownToggle" class="btn btn-ghost btn-circle">
+                    <svg xmlns="http://www.w3.org/2000/svg"
+                        class=" lg:block h-5 w-5 sm:h-6 sm:w-6 lg:h-7 lg:w-7 ml-12" fill="none"
+                        viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16M4 18h7" />
+                    </svg>
+                </div>
+
+                <div>
+                    <h1 class="text-xl sm:text-2xl hidden lg:text-3xl font-semibold justify-center"><span
+                            class="text-gray-500">Think with</span> <span class="text-red-500">Google</span></h1>
+
+                </div>
+
+
+
+            </div>
+
+
+            <ul tabindex="0" id="dropdownMenu"
+                class="menu menu-sm dropdown-content bg-gray-100 rounded-box z-[1] mt-3 p-2 shadow w-full sm:w-96 md:w-full lg:w-auto h-auto lg:h-auto hidden">
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 mt-4 lg:mt-0">
+
+                    <!-- Consumer Insights -->
+                    <ul id="dropToggle" class="space-y-4 border-solid border-1 border-gray-200 bg-white">
+                        <p class="block mb-1 text-base font-semibold text-xl text-slate-800 text-center mt-4">
+                            Consumer Insights
+                        </p>
+                        <hr>
+                        <ul class="hidden lg:block md:block" id="dropMenu">
+
+                            <li class="ml-4">
+                                <a href="#" class="block text-black py-1 text-gray-500 ">
+                                    Overview
+                                </a>
+                            </li>
+                            <hr>
+                            <li class="ml-4">
+                                <a href="#" class="block text-black py-1 text-gray-500 ">
+                                    Consumer Journey
+                                </a>
+                            </li>
+                            <hr>
+                            <li class="ml-4">
+                                <a href="#" class="block text-black py-1 text-gray-500 ">
+                                    Consumer Trends
+                                </a>
+                            </li>
+                        </ul>
+                    </ul>
+
+                    <!-- Marketing Strategies -->
+
+
+                    <ul id="dropTog" class="space-y-4 border-solid border-1 border-gray-200 bg-white">
+                        <p class="block mb-1 text-base font-semibold text-xl text-slate-800 text-center mt-4">
+                            Marketing Strategies
+                        </p>
+                        <hr>
+                        <ul class="hidden lg:block md:block" id="dropedMenu">
+
+                            <li class="ml-4">
+                                <a href="#" class="block text-black py-1 text-gray-500 ">
+                                    Overview
+                                </a>
+                            </li>
+                            <hr>
+                            <li class="ml-4">
+                                <a href="#" class="block text-black py-1 text-gray-500 ">
+                                    AI
+                                </a>
+                            </li>
+                            <hr>
+                            <li class="ml-4">
+                                <a href="#" class="block text-black py-1 text-gray-500 ">
+                                    App & Mobile
+                                </a>
+                            </li>
+                            <hr>
+
+                            <li class="ml-4">
+                                <a href="#" class="block text-black py-1 text-gray-500 ">
+                                    Data & Measurement
+                                </a>
+                            </li>
+                            <hr>
+
+                            <li class="ml-4">
+                                <a href="#" class="block text-black py-1 text-gray-500 ">
+                                    Industries
+                                </a>
+                            </li>
+                        </ul>
+                    </ul>
+                    
+
+                    <!-- Tools -->
+                   
+
+                    
+                    <ul id="dropBer" class="space-y-4 border-solid border-1 border-gray-200 bg-white">
+                        <p class="block mb-1 text-base font-semibold text-xl text-slate-800 text-center mt-4">
+                            Future of Marketing
+                        </p>
+                        <hr>
+                        <ul class="hidden lg:block md:block" id="dropedBer">
+
+                            <li class="ml-4">
+                                <a href="#" class="block text-black py-1 text-gray-500 ">
+                                    Overview
+                                </a>
+                            </li>
+                            <hr>
+                            <li class="ml-4">
+                                <a href="#" class="block text-black py-1 text-gray-500 ">
+                                    Consumer Journey
+                                </a>
+                            </li>
+                            <hr>
+                            <li class="ml-4">
+                                <a href="#" class="block text-black py-1 text-gray-500 ">
+                                    Consumer Trends
+                                </a>
+                            </li>
+                        </ul>
+                    </ul>
+                </div>
+            </ul>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+    <div class="mt-24">
+        <h1 class="text-3xl sm:text-4xl md:text-5xl font-bold text-center">
+            Insights. Ideas. Inspiration.
+        </h1>
+        <p class="text-lg sm:text-xl text-gray-500 text-center mt-2">
+            Take your marketing further with Google. Think with Google.
+        </p>
+
+        <!-- Container adjusts width based on screen size -->
+        <div class="flex flex-col-reverse lg:flex-row mt-12 sm:mt-20 lg:mt-32 gap-8 ml-4 sm:ml-8 lg:ml-12">
+            <div class="w-full lg:w-1/2 mt-12 sm:mt-16 lg:mt-24">
+                <h1 class="text-lg sm:text-xl">Feature of the week</h1>
+
+                <!-- Main feature title responsive sizing -->
+                <h1 class="text-2xl sm:text-3xl lg:text-4xl font-bold">
+                    Creating the impossible ad with AI: Monks
+                </h1>
+                <p class="text-gray-500 mt-4 sm:mt-6">
+                    When the Google AI Lighthouse program gave the team at marketing tech agency Monks an impossible
+                    challenge, they put their heads together with client-partner Hatch and turned “impossible” into a
+                    successful ad
+                    campaign. See what they showed the ad world at the 2024 Cannes Lions Festival.
+                </p>
+            </div>
+            <div class="w-full lg:w-1/2">
+                <img src="https://i.ibb.co/BCHb1Qv/unnamed.webp"
+                    class="w-full h-auto max-w-lg mx-auto lg:w-[500px] lg:h-[500px]" alt="">
+            </div>
+        </div>
+
+    </div>
+
+
+    <div>
+        <h1 class="text-2xl sm:text-3xl ml-4 sm:ml-8 md:ml-12 mt-24">Consumer Insights</h1>
+        <div class="p-4 sm:p-8 md:p-14 flex flex-wrap gap-4 justify-center">
+
+            <div class="card bg-base-100 w-full sm:w-64 md:w-72 border-solid border-2 border-gray-200 hover:shadow-2xl">
+                <figure class="px-6 pt-6 sm:px-10 sm:pt-10">
+                    <img src="https://i.ibb.co.com/3zhK4g7/Thumbnail-01-1-2e16d0ba-fill-600x337-format-webp.webp"
+                        alt="Shoes" class="rounded-xl" />
+                </figure>
+                <div class="pl-4">
+                    <h2 class="text-gray-500">Case Study</h2>
+                    <p class="text-lg sm:text-xl">If a dog chews shoes whose shoes does he choose?</p>
+                </div>
+            </div>
+
+            <div class="card bg-base-100 w-full sm:w-64 md:w-72 border-solid border-2 border-gray-200 hover:shadow-2xl">
+
+                <figure class="px-6 pt-6 sm:px-10 sm:pt-10">
+                    <img src="https://i.ibb.co.com/1f50Ptm/image2.webp" alt="Shoes"
+                        class=" hidden sm:block rounded-xl" />
+                </figure>
+
+                <div class="pl-4">
+                    <h2 class="text-gray-500">Case Study</h2>
+                    <p class="text-lg sm:text-xl">If a dog chews shoes whose shoes does he choose?</p>
+                </div>
+            </div>
+
+            <div class="card bg-base-100 w-full sm:w-64 md:w-72 border-solid border-2 border-gray-200 hover:shadow-2xl">
+                <figure class="px-6 pt-6 sm:px-10 sm:pt-10">
+                    <img src="https://i.ibb.co.com/1f50Ptm/image2.webp" alt="Shoes"
+                        class="hidden sm:block rounded-xl" />
+                </figure>
+                <div class="pl-4">
+                    <h2 class="text-gray-500">Case Study</h2>
+                    <p class="text-lg sm:text-xl">If a dog chews shoes whose shoes does he choose?</p>
+                </div>
+            </div>
+
+            <div class="card bg-base-100 w-full sm:w-64 md:w-72 border-solid border-2 border-gray-200 hover:shadow-2xl">
+                <figure class="px-6 pt-6 sm:px-10 sm:pt-10">
+                    <img src="https://i.ibb.co.com/1f50Ptm/image2.webp" alt="Shoes"
+                        class="hidden sm:block rounded-xl" />
+                </figure>
+                <div class="pl-4">
+                    <h2 class="text-gray-500">Case Study</h2>
+                    <p class="text-lg sm:text-xl">If a dog chews shoes whose shoes does he choose?</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+    <div>
+        <h1 class="text-2xl sm:text-3xl ml-4 sm:ml-8 md:ml-12">Marketing Strategies & Innovations</h1>
+
+        <div class="p-4 sm:p-8 md:p-14 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+            <div class="card bg-base-100 w-full sm:w-64 md:w-72 border-solid border-2 border-gray-200 hover:shadow-2xl">
+                <figure class="px-6 pt-6 sm:px-10 sm:pt-10">
+                    <img src="https://i.ibb.co.com/1f50Ptm/image2.webp" alt="Shoes"
+                        class=" hidden sm:block rounded-xl" />
+                </figure>
+
+                <div class="pl-4">
+                    <h2 class="text-gray-500">Case Study</h2>
+                    <p class="text-lg sm:text-xl">If a dog chews shoes whose shoes does he choose?</p>
+                </div>
+            </div>
+
+            <div class="card bg-base-100 w-full sm:w-64 md:w-72 border-solid border-2 border-gray-200 hover:shadow-2xl">
+                <figure class="px-6 pt-6 sm:px-10 sm:pt-10">
+                    <img src="https://i.ibb.co.com/1f50Ptm/image2.webp" alt="Shoes"
+                        class=" hidden sm:block rounded-xl" />
+                </figure>
+
+                <div class="pl-4">
+                    <h2 class="text-gray-500">Case Study</h2>
+                    <p class="text-lg sm:text-xl">If a dog chews shoes whose shoes does he choose?</p>
+                </div>
+            </div>
+
+            <div class="card bg-base-100 w-full sm:w-64 md:w-72 border-solid border-2 border-gray-200 hover:shadow-2xl">
+                <figure class="px-6 pt-6 sm:px-10 sm:pt-10">
+                    <img src="https://i.ibb.co.com/1f50Ptm/image2.webp" alt="Shoes"
+                        class=" hidden sm:block rounded-xl" />
+                </figure>
+
+                <div class="pl-4">
+                    <h2 class="text-gray-500">Case Study</h2>
+                    <p class="text-lg sm:text-xl">If a dog chews shoes whose shoes does he choose?</p>
+                </div>
+            </div>
+
+            <div class="card bg-base-100 w-full sm:w-64 md:w-72 border-solid border-2 border-gray-200 hover:shadow-2xl">
+                <figure class="px-6 pt-6 sm:px-10 sm:pt-10">
+                    <img src="https://i.ibb.co.com/1f50Ptm/image2.webp" alt="Shoes"
+                        class=" hidden sm:block rounded-xl" />
+                </figure>
+
+                <div class="pl-4">
+                    <h2 class="text-gray-500">Case Study</h2>
+                    <p class="text-lg sm:text-xl">If a dog chews shoes whose shoes does he choose?</p>
+                </div>
+            </div>
+
+
+
+        </div>
+    </div>
+
+
+
+
+
+
+    <div>
+        <h1 class="text-2xl sm:text-3xl ml-4 sm:ml-8 md:ml-12">In-Depth Reading</h1>
+
+        <div class="p-4 sm:p-8 md:pl-12 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+            <div class=" bg-base-100 w-96 shadow-xl">
+                <div class="m-8">
+                    <h2 class=" text-2xl bold">Focus on Canada</h2>
+                    <p class="text-justify mt-4">Canada is one of the most diverse countries in the world, with one of
+                        the world's largest economies. Across the country, Canadians are embracing new ideas, harnessing
+                        the power of AI technology. </p>
+                    <div class="flex mt-8">
+                        <div>
+                            <i class="fa-solid fa-clipboard"> </i>
+                        </div>
+
+                        <div>
+                            <p>10 Collection</p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class=" bg-base-100 w-96 shadow-xl">
+                <div class="m-8">
+                    <h2 class=" text-2xl bold">Focus on Canada</h2>
+                    <p class="text-justify mt-4">Canada is one of the most diverse countries in the world, with one of
+                        the world's largest economies. Across the country, Canadians are embracing new ideas, harnessing
+                        the power of AI technology. </p>
+                    <div class="flex mt-8">
+                        <div>
+                            <i class="fa-solid fa-clipboard"> </i>
+                        </div>
+
+                        <div>
+                            <p>10 Collection</p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class=" bg-base-100 w-96 shadow-xl">
+                <div class="m-8">
+                    <h2 class=" text-2xl bold">Focus on Canada</h2>
+                    <p class="text-justify mt-4">Canada is one of the most diverse countries in the world, with one of
+                        the world's largest economies. Across the country, Canadians are embracing new ideas, harnessing
+                        the power of AI technology. </p>
+                    <div class="flex mt-8">
+                        <div>
+                            <i class="fa-solid fa-clipboard"> </i>
+                        </div>
+
+                        <div>
+                            <p>10 Collection</p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+    </div>
+
+
+
+    </div>
+    </div>
+
+
+
+
+
+
+
+    <div>
+        <h1 class="text-2xl sm:text-3xl ml-4 sm:ml-8 md:ml-12">Tools</h1>
+
+        <div class="p-4 sm:p-8 md:pl-12 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+            <div class="card bg-base-100 w-full sm:w-64 md:w-72 border-solid border-2 border-gray-200 hover:shadow-2xl">
+                <figure class="px-6 pt-6 sm:px-10 sm:pt-10">
+                    <img src="https://i.ibb.co.com/28PnJQD/Find-My-Audience-2e16d0ba-fill-600x337-format-webp.webp"
+                        alt="Tools" class="rounded-xl" />
+                </figure>
+                <div class="pl-4">
+                    <h2 class="text-lg sm:text-xl text-gray-500">Insights Finder</h2>
+                    <p class="text-base sm:text-xl">If a dog chews shoes whose shoes does he choose?</p>
+                </div>
+            </div>
+
+            <div class="card bg-base-100 w-full sm:w-64 md:w-72 border-solid border-2 border-gray-200 hover:shadow-2xl">
+                <figure class="px-6 pt-6 sm:px-10 sm:pt-10">
+                    <img src="https://i.ibb.co.com/xFZHyhS/Google-Trends-2e16d0ba-fill-600x337-format-webp.webp"
+                        alt="Tools" class="rounded-xl" />
+                </figure>
+                <div class="pl-4">
+                    <h2 class="text-lg sm:text-xl text-gray-500">Insights Finder</h2>
+                    <p class="text-base sm:text-xl">If a dog chews shoes whose shoes does he choose?</p>
+                </div>
+            </div>
+
+            <div class="card bg-base-100 w-full sm:w-64 md:w-72 border-solid border-2 border-gray-200 hover:shadow-2xl">
+                <figure class="px-6 pt-6 sm:px-10 sm:pt-10">
+                    <img src="https://i.ibb.co.com/tcst8Wv/TWG-US-2563-Guest-T-2e16d0ba-fill-600x337-format-webp.webp"
+                        alt="Tools" class="rounded-xl" />
+                </figure>
+                <div class="pl-4">
+                    <h2 class="text-lg sm:text-xl text-gray-500">Insights Finder</h2>
+                    <p class="text-base sm:text-xl">If a dog chews shoes whose shoes does he choose?</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <hr class="mt-8">
+
+    <!-- footer -->
+
+    <footer class="relative w-full mb-20">
+        <div
+            class="flex flex-col items-center justify-center w-full py-4 mt-12 border-t border-slate-200 md:flex-row md:justify-center">
+            <p class="block mb-4  text-2xl text-black md:text-left md:mb-0">
+                Discover the latest data, insights, and inspiration from Think with Google.
+            </p>
+            <div class="flex gap-4 mt-4 md:mt-0 text-black sm:justify-center">
+                <a href="#" class="block transition-opacity text-inherit hover:opacity-80">
+                    <!-- Social Icon 1 -->
+                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                        <path fill-rule="evenodd" d="..." clip-rule="evenodd"></path>
+                    </svg>
+                </a>
+                <a href="#" class="block transition-opacity text-inherit hover:opacity-80">
+                    <!-- Social Icon 2 -->
+                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                        <path fill-rule="evenodd" d="..." clip-rule="evenodd"></path>
+                    </svg>
+                </a>
+                <a href="#" class="block transition-opacity text-inherit hover:opacity-80">
+                    <!-- Social Icon 3 -->
+                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                        <path fill-rule="evenodd" d="..." clip-rule="evenodd"></path>
+                    </svg>
+                </a>
+                <a href="#" class="block transition-opacity text-inherit hover:opacity-80">
+                    <!-- Social Icon 4 -->
+                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                        <path fill-rule="evenodd" d="..." clip-rule="evenodd"></path>
+                    </svg>
+                </a>
+                <a href="#" class="block transition-opacity text-inherit hover:opacity-80">
+                    <!-- Social Icon 5 -->
+                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                        <path fill-rule="evenodd" d="..." clip-rule="evenodd"></path>
+                    </svg>
+                </a>
+            </div>
+        </div>
+
+        <div class="w-full px-4 mx-auto max-w-7xl mt-12">
+            <div class="grid grid-cols-1 gap-8 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+                <ul>
+                    <p class="block mb-1 text-xl font-semibold text-slate-800">Consumer Insights</p>
+                    <li>
+                        <a href="#" class="block text-black py-1 hover:text-slate-500 focus:text-slate-500 text-sm">
+                            Overview
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="block text-black py-1 hover:text-slate-500 focus:text-slate-500 text-sm">
+                            Consumer Journey
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="block text-black py-1 hover:text-slate-500 focus:text-slate-500 text-sm">
+                            Consumer Trends
+                        </a>
+                    </li>
+                </ul>
+
+                <ul>
+                    <p class="block mb-1 text-xl font-semibold text-slate-800">Marketing Strategies</p>
+                    <li>
+                        <a href="#" class="block text-black py-1 hover:text-slate-500 focus:text-slate-500 text-sm">
+                            Overview
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="block text-black py-1 hover:text-slate-500 focus:text-slate-500 text-sm">
+                            AI
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="block text-black py-1 hover:text-slate-500 focus:text-slate-500 text-sm">
+                            App & Mobile
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="block text-black py-1 hover:text-slate-500 focus:text-slate-500 text-sm">
+                            Data & Measurement
+                        </a>
+                    </li>
+                </ul>
+
+                <ul>
+                    <p class="block mb-1 text-xl font-semibold text-slate-800">Future of Marketing</p>
+                    <li>
+                        <a href="#" class="block text-black py-1 hover:text-slate-500 focus:text-slate-500 text-sm">
+                            Overview
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="block text-black py-1 hover:text-slate-500 focus:text-slate-500 text-sm">
+                            Creativity
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="block text-black py-1 hover:text-slate-500 focus:text-slate-500 text-sm">
+                            Digital Transformation
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="block text-black py-1 hover:text-slate-500 focus:text-slate-500 text-sm">
+                            Diversity & Inclusion
+                        </a>
+                    </li>
+                </ul>
+
+                <ul>
+                    <p class="block mb-1 text-xl font-semibold text-slate-800">Tools</p>
+                    <li>
+                        <a href="#" class="block text-black py-1 hover:text-slate-500 focus:text-slate-500 text-sm">
+                            Overview
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="block text-black py-1 hover:text-slate-500 focus:text-slate-500 text-sm">
+                            Insights Finder
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="block text-black py-1 hover:text-slate-500 focus:text-slate-500 text-sm">
+                            Google Trends
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="block text-black py-1 hover:text-slate-500 focus:text-slate-500 text-sm">
+                            Market Finder
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+    <script>
+
+        document.getElementById('dropdownToggle').addEventListener('click', function () {
+            const dropdown = document.getElementById('dropdownMenu');
+            if (dropdown.style.display === 'block') {
+                dropdown.style.display = 'none';  
+            } else {
+                dropdown.style.display = 'block';
+            }
+        });
+
+        document.getElementById("dropToggle").addEventListener('click',function(){
+            const dropMenu = document.getElementById('dropMenu');
+            if (dropMenu.style.display === 'block') {
+                dropMenu.style.display = 'none';  
+            } else {
+                dropMenu.style.display = 'block';
+            }
+            
+        })
+
+
+        document.getElementById("dropTog").addEventListener('click',function(){
+            const dropMenu = document.getElementById('dropedMenu');
+            if (dropMenu.style.display === 'block') {
+                dropMenu.style.display = 'none';  
+            } else {
+                dropMenu.style.display = 'block';
+            }
+            
+        })
+
+
+
+        document.getElementById("dropBer").addEventListener('click',function(){
+            const dropMenu = document.getElementById('dropedBer');
+            if (dropMenu.style.display === 'block') {
+                dropMenu.style.display = 'none';  
+            } else {
+                dropMenu.style.display = 'block';
+            }
+            
+        })
+
+
+
+       
+
+
+    </script>
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>

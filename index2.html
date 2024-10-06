@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="navbar bg-base-100">
+        <div class="navbar-start">
+            <div class="dropdown">
+                <!-- Dropdown Toggle Button -->
+                <div tabindex="0" role="button" id="dropdownToggle" class="btn btn-ghost btn-circle ml-4 flex items-center justify-start sm:flex-row sm:space-x-2 lg:ml-6">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 sm:h-6 sm:w-6 lg:h-7 lg:w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7" />
+                    </svg>
+                    <div class="flex justify-end items-center">
+                        <a class="btn btn-ghost text-xl font-bold sm:text-2xl lg:text-3xl text-right">Think with Google</a>
+                    </div>
+                </div>
+    
+                <!-- Dropdown Menu -->
+                <ul id="dropdownMenu" class="menu menu-sm dropdown-content bg-gray-100 rounded-box z-[1] mt-3 p-2 shadow w-full sm:w-96 md:w-full lg:w-auto h-auto lg:h-auto hidden">
+                    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 mt-4 lg:mt-0">
+                        <!-- Dropdown content here -->
+                        <li><a href="#">Option 1</a></li>
+                        <li><a href="#">Option 2</a></li>
+                        <li><a href="#">Option 3</a></li>
+                    </div>
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+    <!-- JavaScript for Dropdown -->
+    <script>
+        document.getElementById('dropdownToggle').addEventListener('click', function() {
+            const dropdownMenu = document.getElementById('dropdownMenu');
+            dropdownMenu.classList.toggle('hidden');
+        });
+    
+        // Close the dropdown when clicking outside of it
+        document.addEventListener('click', function(event) {
+            const isClickInside = document.getElementById('dropdownToggle').contains(event.target);
+            const dropdownMenu = document.getElementById('dropdownMenu');
+            if (!isClickInside && !dropdownMenu.contains(event.target)) {
+                dropdownMenu.classList.add('hidden');
+            }
+        });
+    </script>
+    
+</body>
+</html>
